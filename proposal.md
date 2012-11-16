@@ -52,16 +52,42 @@ and that even on ecological time scales that evolutionary processes have a stron
 
 **Goal 2: Automatically build synthetic datasets to facilitate interdisciplinary synthesis**
 
-**Goal 3: Convert the Retriever to a browser-based interface**
+**Goal 3: Train biologists to properly work with this type of data**
 
 Proposed Activities
 -------------------
+
+* General improvements to the retriever
+* Add infrastructure for handling common evolutionary data formats
+* Add scripts for major evolutionary data formats
+* Add infrastructure for producing synthetic datasets
+    * major undertaking requiring major additions to the code base
+    * requires extensive expansion of the associated script parser
+    * requires homogenizing taxonomies (will leverage existing tools)
+* Automated taxonomy cleaning via TNRS, ITIS, etc.
+
+### Initial list of datasets to include
+* Encyclopedia of Life
+* Catalog of Life
+* TreeBASE
+* Tree of Life - http://tolweb.org/tree/
+* Supertrees
+    * Mammals - http://dx.doi.org/10.1038/nature05634
+    * Birds - http://linnaeus.zoology.gla.ac.uk/~rpage/birdsupertree/
+    * Angiosperms - http://dx.doi.org/10.1073%2Fpnas.0308127100
 
 
 
 Rationale For NESCent Support
 -----------------------------
+NESCent is the international center of evolutionary informatics and is therefore the ideal location for this development.
+At NESCent I will have access to both researchers actively developing software for synthetic evolutionary research,
+and researchers who are trying to address interdisciplinary evolutionary ecology questions.
 
+The former groups will provide me with colleagues to help me learn more about the structure of major evolutionary databases,
+and how to best integrate them with ecological data.
+
+The later group will
 
 
 Collaborations
@@ -76,6 +102,7 @@ Proposed Timetable
 
 Anticipated IT Needs & Plan For Making Data/Software Available
 --------------------------------------------------------------
+Linux workstation, Kinesis keyboard
 
 I and my lab have a long history of open science activities including the publication of data and software under open source licenses (see our GitHub repositories for examples: http://github.com/weecology). The EcoData Retriever is under an MIT License and all code developed during this project will be released under either MIT or BSD licenses.
 
