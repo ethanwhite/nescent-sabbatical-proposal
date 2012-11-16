@@ -18,7 +18,14 @@ Project Summary
 
 Public Summary
 --------------
-
+Large amounts of biological data are being collected every year and made available for analysis.
+However, this data is collected by many different groups, in many different ways,
+and this means that combining the data to answer broad, general, synthetic questions, is difficult.
+To allow scientists to quickly and easily leverage this data,
+we have started developing a software package that automatically downloads, cleans up,
+and installs many of the most important datasets in synthetic ecology.
+The proposed sabbatical will allow the extension of this software to evolutionary biology,
+and will allow it to produce complete synthetic datasets to support evolutionary-ecological syntheses. 
 
 
 Introduction and Goals
