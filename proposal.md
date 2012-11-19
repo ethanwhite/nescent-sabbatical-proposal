@@ -13,6 +13,23 @@ Phone: 435-797-2097
 
 Project Summary
 ---------------
+Large amounts of biological data are being collected every year and made available for analysis and synthesis.
+One of the primary challenges for synthetic research is the process of identifying the necessary data,
+making individual datasets usable, and then integrating the different datasets.
+This process is difficult because most biological data does not adhere to any standard format and
+violates basic rules of proper data structure.
+In addition, linking datasets is challenging due to differences in structure and problems with identifiers for linking data. 
+This means that compiling and combining data to answer synthetic questions is difficult,
+and requires computational skills and knowledge that many biologists lack.
+My lab developed a software package (the EcoData Retriever) to begin to reduce these barriers to synthetic science in ecology.
+This package automatically downloads data, cleans it, processes it into proper structure,
+and stores it in a variety of common formats for easy analysis.
+The proposed research would support a major expansion of the Retriever to:
+1) Include evolutionary, taxonomic, and trait information of interest to evolutionary biologists; and
+2) Automatically generate synthetic datasets combining data across datasets to allow researchers to rapidly conduct synthetic analyses.
+These efforts will focus on facilitating eco-evolutionary synthesis,
+since it is now widely recognized that evolution and ecology are inherently intertwined.
+This sort of interdisciplinary synthetic research is particularly difficult due to differences in data structure among disciplines and the fact that most researchers are not experts in both evolutionary and ecological data.
 
 
 
@@ -76,7 +93,8 @@ Proposed Activities
     * Birds - http://linnaeus.zoology.gla.ac.uk/~rpage/birdsupertree/
     * Angiosperms - http://dx.doi.org/10.1073%2Fpnas.0308127100
 
-
+Because the combinations of data for synthetic projects vary substantially,
+I will expand our existing scripting system to allow users with limited computational backgrounds to quickly combine datasets in customized ways.
 
 Rationale For NESCent Support
 -----------------------------
@@ -92,6 +110,8 @@ The later group will
 
 Collaborations
 --------------
+HIP: Hackathons, Interoperability, Phylogenies
+EvoIO
 
 
 
@@ -104,9 +124,7 @@ Anticipated IT Needs & Plan For Making Data/Software Available
 --------------------------------------------------------------
 Linux workstation, Kinesis keyboard
 
-I and my lab have a long history of open science activities including the publication of data and software under open source licenses (see our GitHub repositories for examples: http://github.com/weecology). The EcoData Retriever is under an MIT License and all code developed during this project will be released under either MIT or BSD licenses.
+I and my lab have a long history of open science activities including the publication of data and software under open source licenses. In fact, this entire proposal was developed in the open on GitHub under a CC-BY license (https://github.com/ethanwhite/ (https://github.com/ethanwhite/nescent-sabbatical-proposal). See my groups GitHub repositories for more examples: http://github.com/weecology). The EcoData Retriever is under an MIT License and all code developed during this project will be released under either MIT or BSD licenses.
 
 Anticipated Results
 -------------------
-
-
