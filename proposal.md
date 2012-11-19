@@ -107,12 +107,14 @@ and how to best integrate them with ecological data.
 
 The later group will
 
+One of the primary sources for evolutionary and ecological data is DRYAD.
+NESCent's active involvement in the development of DRYAD will facilitate the integration of DRYAD data into the Retriever.
 
 Collaborations
 --------------
-HIP: Hackathons, Interoperability, Phylogenies
-EvoIO
-
+* HIP: Hackathons, Interoperability, Phylogenies
+* EvoIO
+* Dryad
 
 
 Proposed Timetable
