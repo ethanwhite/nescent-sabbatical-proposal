@@ -71,6 +71,19 @@ and that even on ecological time scales that evolutionary processes have a stron
 
 **Goal 3: Train biologists to properly work with this type of data**
 
+**Goal 3 alt: Provenance baked in**
+One of the current challenges with sythetic data analysis is tracking the many complicated steps involved in assemblying the data.
+While much of this is well handled by workflows of various forms,
+this process typically starts after much of the data download and munging has already occurred.
+I will add functionality to the Retriever to store all of the information necessary for complete provenance with the resulting data.
+Data sources, download dates, and the version of the Retriever used to process the data,
+will all be recorded. In combination with the Retriever's open source, version controlled,
+code base this will allow the entire process from data download through munging to be recorded.
+This metadata will be stored in the appropriate table metadata systems for the database management systems,
+and in structured comments in csv files.
+I will also add an --archive option to the Retriever that will store this data in a log file,
+and will store both the raw downloaded data and the processed form as exports/dumps from the chosen database management system.
+
 Proposed Activities
 -------------------
 
