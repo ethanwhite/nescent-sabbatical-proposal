@@ -47,6 +47,9 @@ and will allow it to produce complete synthetic datasets to support evolutionary
 
 Introduction and Goals
 ----------------------
+Increasingly large quantities of biological data are being generated and
+made publicly available for analysis through
+
 One of the major challenges for synthetic science is the disconnectedness and heterogeneity of existing data.
 This makes acquiring and using this data a time consuming and error prone process.
 
@@ -65,7 +68,29 @@ OR
 It is increasingly recognized that evolution and ecology are inextricably linked,
 and that even on ecological time scales that evolutionary processes have a strong influence on ecological systems.
 
-**Goal 1: Incorporate taxonomic, phylogenetic, and evolutionary data into the Retriever** 
+**Goal 1: Incorporate evolutionary, phylogenetic, and taxonomic data into the Retriever**.
+To facilitate evolutionary and eco-evolutionary synthesis I will add an array of evolutionary data
+to the Retriever including phylogenetic, taxonomic, and trait data as well as other useful data
+identified through interactions with individuals visiting or in residence at NESCent.
+
+**Goal 2: Automatically build synthetic datasets to facilitate interdisciplinary synthesis**.
+Once clean, well formated, data exists for individual datasets,
+the next major challenge is combining those datasets for analysis.
+I will add the ability to combine datasets for synthesis by adding core architecture to address this problem and
+by modifying the existing scripting language to allow users without strong computational backgrounds to use
+the Retriever to produce these datasets.
+
+**Goal 3: Provenance baked in**
+It is increasingly recognized that in order for science to be replicable/reproducible that the history of the
+entire process from data collection through analysis needs to be documented.
+However, rigorous documentation of this process often begins after data acquisition and munging has occurred.
+I will add automated provenance recording and data archiving to the Retriever to make recording the details
+of the data munging process as simple as pushing a button.
+
+Proposed Activities
+-------------------
+
+**Goal 1: Incorporate evolutionary, phylogenetic, and taxonomic data into the Retriever** 
 
 **Goal 2: Automatically build synthetic datasets to facilitate interdisciplinary synthesis**
 
@@ -80,10 +105,7 @@ code base this will allow the entire process from data download through munging 
 This metadata will be stored in the appropriate table metadata systems for the database management systems,
 and in structured comments in csv files.
 I will also add an --archive option to the Retriever that will store this data in a log file,
-and will store both the raw downloaded data and the processed form as exports/dumps from the chosen database management system.
-
-Proposed Activities
--------------------
+and will store both the raw downloaded data and the processed form as exports/dumps from the chosen database
 
 * General improvements to the retriever
 * Add infrastructure for handling common evolutionary data formats
@@ -137,7 +159,7 @@ Anticipated IT Needs & Plan For Making Data/Software Available
 --------------------------------------------------------------
 Linux workstation, Kinesis keyboard
 
-I and my lab have a long history of open science activities including the publication of data and software under open source licenses. In fact, this entire proposal was developed in the open on GitHub under a CC-BY license (https://github.com/ethanwhite/ (https://github.com/ethanwhite/nescent-sabbatical-proposal). See my groups GitHub repositories for more examples: http://github.com/weecology). The EcoData Retriever is under an MIT License and all code developed during this project will be released under either MIT or BSD licenses.
+I and my lab have a long history of open science activities including the publication of data and software under open source licenses. In fact, this entire proposal was developed in the open on GitHub under a CC-BY license (https://github.com/ethanwhite/nescent-sabbatical-proposal). See my groups GitHub repositories for more examples: http://github.com/weecology). The EcoData Retriever is under an MIT License and all code developed during this project will be released under either MIT or BSD licenses.
 
 Anticipated Results
 -------------------
