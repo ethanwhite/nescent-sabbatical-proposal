@@ -69,9 +69,7 @@ and that even on ecological time scales that evolutionary processes have a stron
 
 **Goal 2: Automatically build synthetic datasets to facilitate interdisciplinary synthesis**
 
-**Goal 3: Train biologists to properly work with this type of data**
-
-**Goal 3 alt: Provenance baked in**
+**Goal 3: Provenance baked in**
 One of the current challenges with sythetic data analysis is tracking the many complicated steps involved in assemblying the data.
 While much of this is well handled by workflows of various forms,
 this process typically starts after much of the data download and munging has already occurred.
