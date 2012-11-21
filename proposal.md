@@ -197,6 +197,9 @@ trait and ecological data to analyze patterns of avian body size),
 but in very project specific ways.
 I will generalize our code to allow taxonomic, phylogenetic, trait, and ecological data
 to be combined into synthetic datasets for rapid analysis.
+Because the combinations of data for synthetic projects vary substantially,
+I will also expand our existing scripting system to allow users with limited
+computational backgrounds to quickly combine datasets in customized ways without programming.
 
 ### Goal 3: Provenance baked in
 One of the current challenges with synthetic data analysis is tracking the many complicated steps involved in assembling the data.
@@ -211,32 +214,27 @@ and in structured comments in csv files.
 I will also add an --archive option to the Retriever that will store this data in a log file,
 and will store both the raw downloaded data and the processed form as exports/dumps from the chosen database
 
-* General improvements to the retriever
-* Add scripts for major evolutionary data formats
-* Add infrastructure for producing synthetic datasets
-    * major undertaking requiring major additions to the code base
-    * requires extensive expansion of the associated script parser
-    * requires homogenizing taxonomies (will leverage existing tools)
-* Automated taxonomy cleaning via TNRS, ITIS, etc.
-
-
-
-Because the combinations of data for synthetic projects vary substantially,
-I will expand our existing scripting system to allow users with limited computational backgrounds to quickly combine datasets in customized ways.
-
 Rationale For NESCent Support
 -----------------------------
-NESCent is the international center of evolutionary informatics and is therefore the ideal location for this development.
-At NESCent I will have access to both researchers actively developing software for synthetic evolutionary research,
+NESCent is the international center of evolutionary informatics and is therefore
+the ideal location for this development.
+At NESCent I will have access to both researchers actively developing software
+for synthetic evolutionary research,
 and researchers who are trying to address interdisciplinary evolutionary ecology questions.
-
-The former groups will provide me with colleagues to help me learn more about the structure of major evolutionary databases,
-and how to best integrate them with ecological data.
-
-The later group will
-
-One of the primary sources for evolutionary and ecological data is DRYAD.
-NESCent's active involvement in the development of DRYAD will facilitate the integration of DRYAD data into the Retriever.
+The first group will allow me to learn more about what kinds of datasets and what data
+combinations are most needed by the evolutionary synthesis community.
+All of my efforts will draw as much as possible on existing initiatives to avoid
+duplicating effort,
+and the second group will provide me with colleagues developing the cutting edge of
+informatics resources which will help facilitate the integration of the Retriever
+with existing initiatives.
+In addition, one of the primary sources for evolutionary and ecological data is DRYAD.
+NESCent's active involvement in the development of DRYAD will facilitate the integration of
+DRYAD data into the Retriever.
+Finally, Ben Morris, the undergraduate student in my lab who lead the development of the
+Retriever, is now in graduate school at the University of North Carolina and working with
+NESCent on informatics projects. Being in the same location as Ben will facilitate interaction
+and collaboration as we develop these new features.
 
 Collaborations
 --------------
