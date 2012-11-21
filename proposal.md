@@ -231,28 +231,47 @@ with existing initiatives.
 In addition, one of the primary sources for evolutionary and ecological data is DRYAD.
 NESCent's active involvement in the development of DRYAD will facilitate the integration of
 DRYAD data into the Retriever.
-Finally, Ben Morris, the undergraduate student in my lab who lead the development of the
-Retriever, is now in graduate school at the University of North Carolina and working with
-NESCent on informatics projects. Being in the same location as Ben will facilitate interaction
-and collaboration as we develop these new features.
 
 Collaborations
 --------------
-* HIP: Hackathons, Interoperability, Phylogenies
-* EvoIO
-* Dryad
+Ben Morris, the undergraduate student in my lab who lead the development of the
+Retriever, is now in graduate school at the University of North Carolina and working with
+NESCent on informatics projects. Being in the same location as Ben will facilitate interaction
+and collaboration as we develop these new features. In addition, I hope to develop interactions and collaborations with working groups and postdocs as well as
+HIP (Hackathons, Interoperability, Phylogenies), EvoIO, and Dryad.
 
 
 Proposed Timetable
 ------------------
 
+I propose a 12-month sabbatical from August 15, 2013 to August 15, 2014.
+The two months will be spent shoring up the fundamentals of the Retriever
+by improving the testing framework, adding continuous integration, and
+improving the documentation.
+This will make adding new features faster and safer, and make the code
+more maintainable in the long run (Wilson et al. 2012).
+Months 3-6 will focus on **Goal 1** including the integration of
+taxonomic tools, which is crucial to the next phase.
+Months 7-10 will focus on implementing **Goal 2**.
+Finally months 11-12 will combine the implementation of **Goal 3**, wrap
+up of remaining tasks from the other two goals.
+Releases will occur throughout the year as new features are developed
+and datasets added.
+
 
 
 Anticipated IT Needs & Plan For Making Data/Software Available
 --------------------------------------------------------------
-Linux workstation, Kinesis keyboard
+I have no meaningful IT needs other than a Linux workstation and a Kinesis keyboard.
 
-I and my lab have a long history of open science activities including the publication of data and software under open source licenses. In fact, this entire proposal was developed in the open on GitHub under a CC-BY license (https://github.com/ethanwhite/nescent-sabbatical-proposal). See my groups GitHub repositories for more examples: http://github.com/weecology). The EcoData Retriever is under an MIT License and all code developed during this project will be released under either MIT or BSD licenses.
+I and my lab have a long history of open science activities including the publication of data and software under open source licenses. In fact, this entire proposal was developed in the open on GitHub under a CC-BY license (https://github.com/ethanwhite/nescent-sabbatical-proposal). See my group's GitHub repositories for more examples: http://github.com/weecology). The EcoData Retriever is released under an MIT License (an approved OSI open source license) and all code developed during this project will be released under MIT or compatible licenses.
+
 
 Anticipated Results
 -------------------
+I anticipate that this proposal will result in 2-3 new major releases of the Retriever.
+This will include substantial expansions and improvements of the website
+(http://ecodataretriever.org) and associate documentation.
+In addition, the rOpenSci team and I are planning do work on wrapping the Retriever's 
+command line interface for their system to allow it to be used from inside of R.
+This work will likely occur during my sabbatical and will result in a new R package published on CRAN.
