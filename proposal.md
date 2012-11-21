@@ -11,6 +11,7 @@ Email: ethan.white@usu.edu
 
 Phone: 435-797-2097
 
+
 Project Summary
 ---------------
 Large amounts of biological data are being collected every year and made available for analysis and synthesis.
@@ -32,7 +33,6 @@ since it is now widely recognized that evolution and ecology are inherently inte
 This sort of interdisciplinary synthetic research is particularly difficult due to differences in data structure among disciplines and the fact that most researchers are not experts in both evolutionary and ecological data.
 
 
-
 Public Summary
 --------------
 Large amounts of biological data are being collected every year and made available for analysis.
@@ -48,29 +48,60 @@ and will allow it to produce complete synthetic datasets to support evolutionary
 Introduction and Goals
 ----------------------
 Increasingly large quantities of biological data are being generated and
-made publicly available for analysis. This data includes the results of:
+made publicly available for analysis.
+This data includes the results from: 1) large coordinated sampling efforts
+such as the National Ecological Observatory Network (http://neoninc.org);
+2) compilations of results into standardized repositories
+such as GenBank (http://www.ncbi.nlm.nih.gov/genbank/) or the Tree of Life (http://tolweb.org/tree);
+and 3) the publication of individual datasets in repositories like Dryad (http://www.datadryad.org)
+due to increasing journal requirements for data deposition (Whitlock et al. 2010).
 
-
-As a result, biological research is increasingly limited by the rate at which available data can be acquired, organized, and analyzed. 
-
-One of the major challenges for synthetic science is the disconnectedness and heterogeneity of existing data.
-This makes acquiring and using this data a time consuming and error prone process. 
-
-This means that scientist spend a lot of time simply assembling, cleaning up, and combining datasets,
-taking time away from the scientific aspects of the research.
-
-This is particularly true when trying to work across disciplinary boundaries,
-because while researchers may be familiar with the general availability and structure of data in their own discipline,
-they are rarely if ever familiar with the structure and availability of data in related disciplines.
+As a result of this rapidly expanding availability of data,
+synthetic research in biology is increasingly limited by the rate at which available data can be acquired, organized, and analyzed.
+Unfortunately, this process of assembling data for synthesis is time consuming and
+error prone, because most biological datasets do not adhere to any agreed-upon standards in format,
+data structure or method of access (Jones 2006).
+This problem persists despite repeated attempts to improve the structure and
+usability of data in a number of biological disciplines (e.g., Jones 2006, Reichman et al. 2011).
 
 Even when individual datasets can be relatively easily acquired,
-combining them to be able to answer broad questions is difficult and time consuming for even experienced programmers.
-Since most biologists are not computational experts this difficulty can present a strong limit on synthetic science.
+combining them to be able to answer broad questions is difficult and time consuming,
+even for experienced data scientists.
+This task is inherently both labor and knowledge intensive,
+and is further complicated variable data structures, inconsistent use of unique linking fields,
+and changes in taxonomies and other common sources of connecting different datasets.
 
-It is increasingly recognized that ecological systems cannot be understood in the absence of evolution.
-OR
-It is increasingly recognized that evolution and ecology are inextricably linked,
-and that even on ecological time scales that evolutionary processes have a strong influence on ecological systems.
+These problems with biological data mean that scientists spend a lot of time simply assembling,
+cleaning, and combining datasets.
+This takes time away from the scientific aspects of the research (Morris & White in review).
+In addition, the skills and tools required to assemble data are often not required for
+actually conducting synthetic science *per se*.
+This means that the difficulty of assembling data can serve as a major barrier,
+preventing many scientists from conducting synthetic research at all.
+These challenges are magnified further when trying to work across disciplinary boundaries.
+While researchers may be familiar with the general availability and structure of data in their own discipline,
+they are rarely, if ever, familiar with the structure and availability of data in related disciplines.
+
+My lab has begun to address these challenges by developing a software package (the EcoData Retriever; http://ecodataretriever.org) to make it easier to conduct synthetic science in ecology.
+This package automatically downloads data from individual datasets,
+cleans it, processes it into proper structure,
+and stores it in a variety of common formats for easy analysis.
+While this package has proved useful to us and a growing number of other researchers,
+it is limited by its lack of evolutionary data,
+and support for automatically integrating evolutionary and ecological datasets.
+
+With the leadership of NESCent over the past decade, evolutionary synthesis has now
+come to the forefront of synthetic research in biology.
+In addition, it is increasingly recognized that evolution and ecology are inextricably linked,
+and that even on ecological time scales that evolutionary processes have a strong influence
+on ecological systems (citations). This means that in order to best facilitate synthesis
+in both evolution and ecology that the Retriever needs to expand to include evolutionary data.
+It also needs to move beyond helping researchers at the level of the individual dataset and
+begin facilitating the combination of datasets to automate the process of producing data
+for synthetic projects as much as possible.
+Finally, it needs to be expanded to address the challenge of documenting the provenance of
+both data and processing the occurs in the formation of synthetic datasets.
+I propose to address these critical needs by addressing three major goals:
 
 **Goal 1: Incorporate evolutionary, phylogenetic, and taxonomic data into the Retriever**.
 To facilitate evolutionary and eco-evolutionary synthesis I will add an array of evolutionary data
@@ -90,6 +121,11 @@ entire process from data collection through analysis needs to be documented.
 However, rigorous documentation of this process often begins after data acquisition and munging has occurred.
 I will add automated provenance recording and data archiving to the Retriever to make recording the details
 of the data munging process as simple as pushing a button.
+
+In combination with further improvements to the software in general
+(e.g., an improved testing framework with continuous integration and better documentation)
+addressing these goals will result in a key tool for supporting evolutionary and
+eco-evolutionary synthesis.
 
 Proposed Activities
 -------------------
