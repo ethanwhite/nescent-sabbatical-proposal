@@ -68,7 +68,7 @@ Even when individual datasets can be relatively easily acquired,
 combining them to be able to answer broad questions is difficult and time consuming,
 even for experienced data scientists.
 This task is inherently both labor and knowledge intensive,
-and is further complicated variable data structures, inconsistent use of unique linking fields,
+and is further complicated by variable data structures, inconsistent use of unique linking fields,
 and changes in taxonomies and other common sources of connecting different datasets.
 
 These problems with biological data mean that scientists spend a lot of time simply assembling,
@@ -87,8 +87,8 @@ This package automatically downloads data from individual datasets,
 cleans it, processes it into proper structure,
 and stores it in a variety of common formats for easy analysis.
 While this package has proved useful to us and a growing number of other researchers,
-it is limited by its lack of evolutionary data,
-and support for automatically integrating evolutionary and ecological datasets.
+it is limited both by its lack of evolutionary data,
+and its lack of ability to automatically integrate evolutionary and ecological datasets.
 
 With the leadership of NESCent over the past decade, evolutionary synthesis has now
 come to the forefront of synthetic research in biology.
