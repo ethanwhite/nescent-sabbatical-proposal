@@ -1,5 +1,5 @@
-Supporting Eco-Evolutionary Analyses by Integrating Evolutionary Data in the EcoData Retriever
-==============================================================================================
+Supporting Evolutionary Synthesis by Integrating Evolutionary Data in the EcoData Retriever
+===========================================================================================
 
 Ethan P. White,
 Department of Biology and the Ecology Center,
@@ -48,12 +48,16 @@ and will allow it to produce complete synthetic datasets to support evolutionary
 Introduction and Goals
 ----------------------
 Increasingly large quantities of biological data are being generated and
-made publicly available for analysis through
+made publicly available for analysis. This data includes the results of:
+
+
+As a result, biological research is increasingly limited by the rate at which available data can be acquired, organized, and analyzed. 
 
 One of the major challenges for synthetic science is the disconnectedness and heterogeneity of existing data.
-This makes acquiring and using this data a time consuming and error prone process.
+This makes acquiring and using this data a time consuming and error prone process. 
 
-* General mention of data munging being large fraction of work
+This means that scientist spend a lot of time simply assembling, cleaning up, and combining datasets,
+taking time away from the scientific aspects of the research.
 
 This is particularly true when trying to work across disciplinary boundaries,
 because while researchers may be familiar with the general availability and structure of data in their own discipline,
@@ -80,7 +84,7 @@ I will add the ability to combine datasets for synthesis by adding core architec
 by modifying the existing scripting language to allow users without strong computational backgrounds to use
 the Retriever to produce these datasets.
 
-**Goal 3: Provenance baked in**
+**Goal 3: Provenance baked in**.
 It is increasingly recognized that in order for science to be replicable/reproducible that the history of the
 entire process from data collection through analysis needs to be documented.
 However, rigorous documentation of this process often begins after data acquisition and munging has occurred.
