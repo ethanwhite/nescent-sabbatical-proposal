@@ -124,18 +124,82 @@ of the data munging process as simple as pushing a button.
 
 In combination with further improvements to the software in general
 (e.g., an improved testing framework with continuous integration and better documentation)
-addressing these goals will result in a key tool for supporting evolutionary and
-eco-evolutionary synthesis.
+addressing these goals will result in a key tool for immediately supporting evolutionary and
+eco-evolutionary synthesis, while broader initiatives (e.g., Parr et al. 2012, DataONE) work
+towards developing more complex and inclusive solutions.
 
 Proposed Activities
 -------------------
 
-**Goal 1: Incorporate evolutionary, phylogenetic, and taxonomic data into the Retriever** 
+### Goal 1: Incorporate evolutionary, phylogenetic, and taxonomic data into the Retriever
 
-**Goal 2: Automatically build synthetic datasets to facilitate interdisciplinary synthesis**
+A broad array of datasets relevant to evolutionary and eco-evolutionary synthesis
+will be added to the Retriever.
 
-**Goal 3: Provenance baked in**
-One of the current challenges with sythetic data analysis is tracking the many complicated steps involved in assemblying the data.
+#### Initial list of datasets to include
+* Encyclopedia of Life
+* Catalog of Life
+* TreeBASE
+* Tree of Life - http://tolweb.org/tree/
+* Supertrees
+    * Mammals - http://dx.doi.org/10.1038/nature05634
+    * Birds - http://linnaeus.zoology.gla.ac.uk/~rpage/birdsupertree/
+    * Angiosperms - http://dx.doi.org/10.1073%2Fpnas.0308127100
+
+The development of this list will be informed by actively interacting with working
+group members and postdocs at NESCent to determine which types of data,
+and which specific datasets, tend to be used most frequently by the evolutionary
+synthesis community. I also plan to educate the NESCent community about our
+easy to use script format to allow them to easily add whatever data they need
+using only simple plain text descriptions of the dataset structure. This has the
+potential to vastly expand the amount of data supported through contributions by
+users of the Retriever.
+
+Accomplishing this goal will require the addition of code for handling common evolutionary
+data formats that are not currently available in the Retriever (e.g., standard formats
+for phylogenetic trees).
+
+#### Integration of taxonomic tools
+
+One of the major challenges in linking datasets in biology are changes and inconsistencies
+in taxonomies. As part of this project I will integrate the Retriever with existing resources
+for accessing and standardizing taxonomic information
+(e.g., Taxonomic Name Resolution Service, http://tnrs.iplantcollaborative.org/;
+Integrated Taxonomic Information Service, http://www.itis.gov/;
+Global Names Resolver, http://resolver.globalnames.org/).
+When importing a datasets users will be given the option to have the Retriever automatically
+clean up and standardize the taxonomic information using these services.
+Logs will be generated of all taxonomic changes
+(either as log files or as tables added to the database)
+to allow for full back tracking to the original data source.
+In addition to improving analysis and reporting of individual datasets,
+this integration of taxonomic tools will facilitate **Goal 2**.
+
+### Goal 2: Automatically build synthetic datasets to facilitate interdisciplinary synthesis
+
+One of the biggest challenges in synthetic research is combining datasets.
+I will develop tools in the Retriever to facilitate two different kinds of dataset combination.
+First, I will build functionality to combine similar data from datasets
+with different structures into single synthetic datasets.
+For example, in White et al. 2012 we combined data from six different datasets,
+with widely differing structures,
+to analyze species abundance distributions across ecosystems and taxonomic groups.
+However, we did this work by writing individual sets of queries for each dataset,
+resulting in XXX lines of SQL that is fragile, scales poorly, and is not generalizable.
+The updated Retriever will allow the specification of fields in different datasets
+that should be combined into a single core field in a synthetic dataset.
+The ability to use queries of the original dataset to generate the table with the
+necessary fields will also be included.
+Second, I will build functionality to allow different types of datasets to be combined
+based on a set of common linking fields.
+This is again work that my group has done in the past (e.g., Thibault et al. 2011 combines
+trait and ecological data to analyze patterns of avian body size),
+but in very project specific ways.
+I will generalize our code to allow taxonomic, phylogenetic, trait, and ecological data
+to be combined into synthetic datasets for rapid analysis.
+
+### Goal 3: Provenance baked in
+One of the current challenges with synthetic data analysis is tracking the many complicated steps involved in assembling the data.
 While much of this is well handled by workflows of various forms,
 this process typically starts after much of the data download and munging has already occurred.
 I will add functionality to the Retriever to store all of the information necessary for complete provenance with the resulting data.
@@ -148,7 +212,6 @@ I will also add an --archive option to the Retriever that will store this data i
 and will store both the raw downloaded data and the processed form as exports/dumps from the chosen database
 
 * General improvements to the retriever
-* Add infrastructure for handling common evolutionary data formats
 * Add scripts for major evolutionary data formats
 * Add infrastructure for producing synthetic datasets
     * major undertaking requiring major additions to the code base
@@ -156,15 +219,7 @@ and will store both the raw downloaded data and the processed form as exports/du
     * requires homogenizing taxonomies (will leverage existing tools)
 * Automated taxonomy cleaning via TNRS, ITIS, etc.
 
-### Initial list of datasets to include
-* Encyclopedia of Life
-* Catalog of Life
-* TreeBASE
-* Tree of Life - http://tolweb.org/tree/
-* Supertrees
-    * Mammals - http://dx.doi.org/10.1038/nature05634
-    * Birds - http://linnaeus.zoology.gla.ac.uk/~rpage/birdsupertree/
-    * Angiosperms - http://dx.doi.org/10.1073%2Fpnas.0308127100
+
 
 Because the combinations of data for synthetic projects vary substantially,
 I will expand our existing scripting system to allow users with limited computational backgrounds to quickly combine datasets in customized ways.
