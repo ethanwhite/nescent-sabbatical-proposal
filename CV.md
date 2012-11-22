@@ -44,7 +44,7 @@ Phi Beta Kappa 1998
 
 Publications
 ------------
-I have published (or in press) 46 journal articles and book chapters.
+I have published (or had accepted) 46 journal articles and book chapters since 2001.
 They have been 1306 times and result in an h-index of 19 (data from Google Scholar).
 Alt-metric analyses by Impact Story (http://impactstory.org/collection/givnxe) show that
 23 of these papers have been Highly Saved, 13 of them have been Highly Cited, 3 have been
@@ -53,11 +53,34 @@ Highly Discussed, and 2 have been Highly Recommended.
 ### Publications by Journal
 *Ecology Letters* (2003, 2004, 2005, 2007, 2008, 2009a, 2009b, 2009c)
 
-*Ecology* (2004, 2005a, 2005b, 2006, 2008, 2011a, 2011b, 2012, in press), *American Naturalist* (2004, 2008, 2010, in press), *Global Ecology and Biogeography* (2007a, 2007b, 2011a, 2011b), *Evolutionary Ecology Research* (2003, 2007), *Ideas in Ecology and Evolution* (2010), *Journal of Mammalogy* (2010), *Oikos* (2006), *Philosophical Transactions of the Royal Society* (2010), *PLOS ONE* (2011), *Science* (2006), *Southwestern Naturalist* (2004), *Trends in Ecology and Evolution* (2007), *Wildlife Society Bulletin* (2001), plus 8 book chapters.
+*Ecology* (2004, 2005a, 2005b, 2006, 2008, 2011a, 2011b, 2012, in press)
+
+*American Naturalist* (2004, 2008, 2010, in press)
+
+*Global Ecology and Biogeography* (2007a, 2007b, 2011a, 2011b)
+
+*Evolutionary Ecology Research* (2003, 2007)
+
+*Ideas in Ecology and Evolution* (2010)
+
+*Journal of Mammalogy* (2010)
+
+*Oikos* (2006)
+
+*Philosophical Transactions of the Royal Society* (2010)
+
+*PLOS ONE* (2011), *Science* (2006)
+
+*Southwestern Naturalist* (2004)
+
+*Trends in Ecology and Evolution* (2007)
+
+*Wildlife Society Bulletin* (2001)
+
+8 book chapters.
 
 Funding
 -------
-
 National Science Foundation (DEB-0953694). CAREER: Advancing macroecology using informatics and entropy maximization. PI: E.P. White. 2010-2015. http://dx.doi.org/10.6084/m9.figshare.93937 
 
 National Ecological Observatory Network. Existing terrestrial organismal data survey and secure database interface development. PI: E.P. White. 2012.
@@ -76,3 +99,7 @@ Software
 EcoData Retriever: tool for easy acquisition of public ecological datasets. By B.D. Morris and E.P. White  https://github.com/weecology/retriever
 
 METE: Python-based tool for fitting and modeling the Maximum Entropy Theory of Ecology. By E.P. White, K.M. Thibault, X. Xiao, D.J. McGlinn and S. Supp. https://github.com/weecology/METE
+
+Teaching and Mentoring
+----------------------
+I teach programming, database management, and advanced computational skills to biology students, both through formal university coursework (http://programmingforbiologists.org) and through Software Carpentry workshops (http://software-carpentry.org). I have trained and mentored 2 postdoctoral researchers, 3 graduate students, and 3 undergraduate researchers.
