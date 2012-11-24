@@ -50,7 +50,7 @@ Alt-metric analyses by Impact Story (http://impactstory.org/collection/givnxe) s
 23 of these papers have been Highly Saved, 13 of them have been Highly Cited, 3 have been
 Highly Discussed, and 2 have been Highly Recommended.
 
-### Publications Sumarized by Journal
+### Publications Summarized by Journal
 *Ecology Letters* (2003, 2004, 2005, 2007, 2008, 2009a, 2009b, 2009c)
 
 *Ecology* (2004, 2005a, 2005b, 2006, 2008, 2011a, 2011b, 2012, 2013)
