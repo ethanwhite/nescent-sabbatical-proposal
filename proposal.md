@@ -110,11 +110,11 @@ identified through interactions with individuals visiting or in residence at NES
 Whenever possible this work will utilize existing informatics resources to avoid duplication of effort.
 
 **Goal 2: Automatically build synthetic datasets to facilitate interdisciplinary synthesis**.
-Once clean, well formated, data exists for individual datasets,
+Once clean, well formatted, data exists for individual datasets,
 the next major challenge is combining those datasets for analysis.
-I will add the ability to combine datasets for synthesis by adding core architecture to address this problem and
-by modifying the existing scripting language to allow users without strong computational backgrounds to use
-the Retriever to produce these datasets.
+I will add the ability to combine datasets for synthesis by adding core architecture to
+address this problem and by modifying our existing approach to allowing users
+without strong computational backgrounds to use the Retriever to produce these datasets.
 
 **Goal 3: Provenance baked in**.
 It is increasingly recognized that in order for science to be replicable/reproducible that
@@ -127,8 +127,10 @@ the details of the data acquisition and processing phase of a project as simple 
 In combination with further improvements to the software in general
 (e.g., an improved testing framework with continuous integration and better documentation)
 addressing these goals will result in a key tool for immediately supporting evolutionary and
-eco-evolutionary synthesis, while broader initiatives (e.g., Parr et al. 2012, DataONE) work
-towards developing more complex and inclusive solutions.
+eco-evolutionary synthesis using published data in the existing format,
+while broader initiatives (e.g., Parr et al. 2012, DataONE) work
+towards developing more complex and inclusive solutions based on new standards
+and infrastructure for data publication.
 
 Proposed Activities
 -------------------
@@ -195,7 +197,7 @@ For example, in White et al. 2012 we combined data from six different datasets,
 with widely differing structures,
 to analyze species abundance distributions across ecosystems and taxonomic groups.
 However, we did this work by writing individual sets of queries for each dataset,
-resulting in XXX lines of SQL that is fragile, scales poorly, and is not generalizable.
+resulting in over 300 lines of Python + SQL that is fragile, scales poorly, and is not generalizable.
 The updated Retriever will allow the specification of fields in different datasets
 that should be combined into a single core field in a synthetic dataset.
 The ability to use queries of the original dataset to generate the table with the
