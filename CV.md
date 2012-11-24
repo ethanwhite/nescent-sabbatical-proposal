@@ -45,17 +45,17 @@ Phi Beta Kappa 1998
 Publications
 ------------
 I have published (or had accepted) 46 journal articles and book chapters since 2001.
-They have been 1306 times and result in an h-index of 19 (data from Google Scholar).
+They have been cited 1306 times and I have an h-index of 19 (data from Google Scholar).
 Alt-metric analyses by Impact Story (http://impactstory.org/collection/givnxe) show that
 23 of these papers have been Highly Saved, 13 of them have been Highly Cited, 3 have been
 Highly Discussed, and 2 have been Highly Recommended.
 
-### Publications by Journal
+### Publications Sumarized by Journal
 *Ecology Letters* (2003, 2004, 2005, 2007, 2008, 2009a, 2009b, 2009c)
 
-*Ecology* (2004, 2005a, 2005b, 2006, 2008, 2011a, 2011b, 2012, in press)
+*Ecology* (2004, 2005a, 2005b, 2006, 2008, 2011a, 2011b, 2012, 2013)
 
-*American Naturalist* (2004, 2008, 2010, in press)
+*American Naturalist* (2004, 2008, 2010, 2013)
 
 *Global Ecology and Biogeography* (2007a, 2007b, 2011a, 2011b)
 
@@ -77,7 +77,7 @@ Highly Discussed, and 2 have been Highly Recommended.
 
 *Wildlife Society Bulletin* (2001)
 
-8 book chapters.
+8 book chapters (2005a, 2005b, 2007, 2012, 2013a, 2013b, 2013c)
 
 Funding
 -------
