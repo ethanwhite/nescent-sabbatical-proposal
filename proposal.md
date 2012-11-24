@@ -107,6 +107,7 @@ I propose to address these critical needs by addressing three major goals:
 To facilitate evolutionary and eco-evolutionary synthesis I will add an array of evolutionary data
 to the Retriever including phylogenetic, taxonomic, and trait data as well as other useful data
 identified through interactions with individuals visiting or in residence at NESCent.
+Whenever possible this work will utilize existing informatics resources to avoid duplication of effort.
 
 **Goal 2: Automatically build synthetic datasets to facilitate interdisciplinary synthesis**.
 Once clean, well formated, data exists for individual datasets,
@@ -116,11 +117,12 @@ by modifying the existing scripting language to allow users without strong compu
 the Retriever to produce these datasets.
 
 **Goal 3: Provenance baked in**.
-It is increasingly recognized that in order for science to be replicable/reproducible that the history of the
-entire process from data collection through analysis needs to be documented.
-However, rigorous documentation of this process often begins after data acquisition and munging has occurred.
-I will add automated provenance recording and data archiving to the Retriever to make recording the details
-of the data munging process as simple as pushing a button.
+It is increasingly recognized that in order for science to be replicable/reproducible that
+the history of the entire process from data collection through analysis needs to be documented.
+However, rigorous documentation of this process often begins after data acquisition and
+munging has occurred.
+I will add automated provenance recording and data archiving to the Retriever to make recording
+the details of the data acquisition and processing phase of a project as simple as pushing a button.
 
 In combination with further improvements to the software in general
 (e.g., an improved testing framework with continuous integration and better documentation)
@@ -134,30 +136,21 @@ Proposed Activities
 ### Goal 1: Incorporate evolutionary, phylogenetic, and taxonomic data into the Retriever
 
 A broad array of datasets relevant to evolutionary and eco-evolutionary synthesis
-will be added to the Retriever.
+will be added to the Retriever. Thanks for a number of ongoing efforts by other
+groups (including some based at NESCent) much of this work will simply involve
+accessing web services to allow their data to be accessed through the Retriever
+and readily integrated with other data sources.
 
-#### Initial list of datasets to include
-* Encyclopedia of Life
-* Catalog of Life
-* TreeBASE
-* Tree of Life - http://tolweb.org/tree/
-* Supertrees
-    * Mammals - http://dx.doi.org/10.1038/nature05634
-    * Birds - http://linnaeus.zoology.gla.ac.uk/~rpage/birdsupertree/
-    * Angiosperms - http://dx.doi.org/10.1073%2Fpnas.0308127100
-
-The development of this list will be informed by actively interacting with working
+This work will include integration with existing taxonomic and phylogenetic
+informatics efforts (see below) and the development of the list of data to add will
+be informed by actively interacting with working
 group members and postdocs at NESCent to determine which types of data,
 and which specific datasets, tend to be used most frequently by the evolutionary
-synthesis community. I also plan to educate the NESCent community about our
-easy to use script format to allow them to easily add whatever data they need
-using only simple plain text descriptions of the dataset structure. This has the
+synthesis community. I also plan to provide training to the NESCent community about
+how to add datasets to the Retriever themselves, so that they can easily add whatever
+data they need. This has the
 potential to vastly expand the amount of data supported through contributions by
 users of the Retriever.
-
-Accomplishing this goal will require the addition of code for handling common evolutionary
-data formats that are not currently available in the Retriever (e.g., standard formats
-for phylogenetic trees).
 
 #### Integration of taxonomic tools
 
@@ -174,6 +167,23 @@ Logs will be generated of all taxonomic changes
 to allow for full back tracking to the original data source.
 In addition to improving analysis and reporting of individual datasets,
 this integration of taxonomic tools will facilitate **Goal 2**.
+
+#### Integration of phylogenetic tools
+
+One of they key components to integrating evolutionary and ecological data
+is the phylogenetic tree for the species involved. I will leverage existing informatics efforts
+that are compiling and providing access to phylogenetic data
+(e.g., Phylotastic, http://phylotastic.org; Tree of Life; http://tolweb.org; TreeBASE, http://treebase.org/)
+through web services to integrate phylogenies with other biological data.
+
+#### Other datasets to include
+* Encyclopedia of Life
+* Catalog of Life
+
+Accomplishing this goal will require the addition of code for interacting with web
+services for other informatics efforts, adding the ability to handle evolutionary
+data that is not currently covered by other initiatives, and adding scripts for
+key datasets. 
 
 ### Goal 2: Automatically build synthetic datasets to facilitate interdisciplinary synthesis
 
@@ -250,6 +260,9 @@ by improving the testing framework, adding continuous integration, and
 improving the documentation.
 This will make adding new features faster and safer, and make the code
 more maintainable in the long run (Wilson et al. 2012).
+While conducting this ground work I plan to interact actively with
+the NESCent informatics and scientific communities to identify the
+best areas to focus effort in **Goals 1 & 2**.
 Months 3-6 will focus on **Goal 1** including the integration of
 taxonomic tools, which is crucial to the next phase.
 Months 7-10 will focus on implementing **Goal 2**.
