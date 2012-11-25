@@ -262,10 +262,11 @@ DRYAD data into the Retriever.
 Collaborations
 --------------
 Ben Morris, the undergraduate student in my lab who lead the development of the
-Retriever, is now in graduate school at the University of North Carolina and working with
-NESCent on informatics projects. Being in the same location as Ben will facilitate interaction
-and collaboration as we develop these new features. In addition, I hope to meet regularly withdevelop interactions and collaborations with working groups and postdocs as well as
-HIP (Hackathons, Interoperability, Phylogenies), EvoIO, and Dryad.
+Retriever, is now in graduate school at the University of North Carolina and part of the
+NESCent informatics group. Ben has agreed to collaborate on this expansion of the Retriever,
+and being in the same location as will facilitate this effort.
+In addition, I hope to meet regularly with members of the NESCent IT group to coordinate
+integration of evolutionary tools into the Retriever.
 
 
 Proposed Timetable
