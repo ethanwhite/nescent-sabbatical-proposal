@@ -264,7 +264,7 @@ Collaborations
 Ben Morris, the undergraduate student in my lab who lead the development of the
 Retriever, is now in graduate school at the University of North Carolina and working with
 NESCent on informatics projects. Being in the same location as Ben will facilitate interaction
-and collaboration as we develop these new features. In addition, I hope to develop interactions and collaborations with working groups and postdocs as well as
+and collaboration as we develop these new features. In addition, I hope to meet regularly withdevelop interactions and collaborations with working groups and postdocs as well as
 HIP (Hackathons, Interoperability, Phylogenies), EvoIO, and Dryad.
 
 
@@ -308,3 +308,18 @@ This will include substantial expansions and improvements of the website
 In addition, the rOpenSci team and I are planning do work on wrapping the Retriever's 
 command line interface for their system to allow it to be used from inside of R.
 This work will likely occur during my sabbatical and will result in a new R package published on CRAN.
+
+References Cited
+----------------
+
+Jones, M. B., M. P. Schildhauer, O. J. Reichman, and S. Bowers. 2006. The New Bioinformatics: Integrating Ecological Data from the Gene to the Biosphere. Annual Review of Ecology, Evolution, and Systematics 37: 519-544.
+
+Parr, C.S., R. Guralnick, N. Cellinese, and R.D.M. Page. 2012. Evolutionary informatics: unifying knowledge about the diversity of life. Trends in Ecology & Evolution 27:94 - 103. 
+
+Reichman, O. J., Jones, M. B. & Schildhauer, M. P. 2011. “Challenges and Opportunities of Open Data 	in Ecology.” Science 331, 703–705.
+
+Thibault, K.M., E.P. White, A.H. Hurlbert, and S.K.M. Ernest. 2011. Multimodality in the individual size distribution of bird communities. Global Ecology and Biogeography 20:145-153.
+
+White, E.P., K.M. Thibault, and X. Xiao. 2012. Characterizing species-abundance distributions across taxa and ecosystems using a simple maximum entropy model. Ecology 93:1772–1778.
+
+Whitlock, M.C., M.A. McPeek, M.D. Rausher, L. Rieseberg, and A.J. Moore. 2010. Data Archiving. American Naturalist 175:145-146.
