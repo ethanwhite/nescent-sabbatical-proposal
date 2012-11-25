@@ -182,7 +182,17 @@ through web services to integrate phylogenies with other biological data.
 Accomplishing this goal will require the addition of code for interacting with web
 services for other informatics efforts, adding the ability to handle evolutionary
 data that is not currently covered by other initiatives, and adding scripts for
-key datasets. 
+key datasets.
+
+#### Trait and life history data
+
+Publicly available trait and life history data is currently distributed across a wide array
+of different sources
+(e.g., Freshwater Biological Traits Database, http://www.epa.gov/ncea/global/traits/;
+AnAge, http://genomics.senescence.info/species/;
+USDA plants, http://plants.usda.gov/; and numerous publications). As much of this public data
+as will made available by the Retriever. The data will be restructured to allow all of
+the different trait databases to be consistently integrated with other data.
 
 ### Goal 2: Automatically build synthetic datasets to facilitate interdisciplinary synthesis
 
