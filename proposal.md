@@ -179,10 +179,6 @@ that are compiling and providing access to phylogenetic data
 (e.g., Phylotastic, http://phylotastic.org; Tree of Life; http://tolweb.org; TreeBASE, http://treebase.org/)
 through web services to integrate phylogenies with other biological data.
 
-#### Other datasets to include
-* Encyclopedia of Life
-* Catalog of Life
-
 Accomplishing this goal will require the addition of code for interacting with web
 services for other informatics efforts, adding the ability to handle evolutionary
 data that is not currently covered by other initiatives, and adding scripts for
@@ -208,11 +204,19 @@ based on a set of common linking fields.
 This is again work that my group has done in the past (e.g., Thibault et al. 2011 combines
 trait and ecological data to analyze patterns of avian body size),
 but in very project specific ways.
-I will generalize our code to allow taxonomic, phylogenetic, trait, and ecological data
+I will generalize the Retriever to allow taxonomic, phylogenetic, trait, and ecological data
 to be combined into synthetic datasets for rapid analysis.
+
 Because the combinations of data for synthetic projects vary substantially,
-I will also expand our existing scripting system to allow users with limited
+I will also expand our improve and expand our existing system to allow users with limited
 computational backgrounds to quickly combine datasets in customized ways without programming.
+In collaboration with Ben Morris, I will improve our existing approach to allowing
+users with limited computational backgrounds to add information about datasets not currently
+in the Retriever by transitioning our existing scripting system for describing the structure
+of individual datasets to use the Resource Description Framework (RDF) with an ontology
+written in Web Ontology Language(OWL). This will make it easier to describe the relationships
+between different datasets and serve as a building block for integrating the Retriever more
+thoroughly into the growing eco-evolutionary informatics ecosystem.
 
 ### Goal 3: Provenance baked in
 One of the current challenges with synthetic data analysis is tracking the many complicated steps involved in assembling the data.
