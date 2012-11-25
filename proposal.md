@@ -159,7 +159,7 @@ users of the Retriever.
 One of the major challenges in linking datasets in biology are changes and inconsistencies
 in taxonomies. As part of this project I will integrate the Retriever with existing resources
 for accessing and standardizing taxonomic information
-(e.g., the iPlant and/or Phylotastic Taxonomic Name Resolution Services,
+(e.g., the iPlant and/or Phylotastic's Taxonomic Name Resolution Services,
 http://tnrs.iplantcollaborative.org/, http://www.evoio.org/wiki/Phylotastic/TNRS;
 Integrated Taxonomic Information Service, http://www.itis.gov/;
 Global Names Resolver, http://resolver.globalnames.org/).
@@ -278,7 +278,10 @@ and datasets added.
 
 Anticipated IT Needs & Plan For Making Data/Software Available
 --------------------------------------------------------------
-I have no meaningful IT needs other than a Linux workstation and a Kinesis keyboard.
+I will be developing software as part of this proposal,
+but I will be handling all of the development myself and therefore will not require IT support
+(though I greatly look forward to the possibility of interacting with this group).
+I will require only a Linux workstation.
 
 I and my lab have a long history of open science activities including the publication of data and software under open source licenses. In fact, this entire proposal was developed in the open on GitHub under a CC-BY license (https://github.com/ethanwhite/nescent-sabbatical-proposal). See my group's GitHub repositories for more examples: http://github.com/weecology). The EcoData Retriever is released under an MIT License (an approved OSI open source license) and all code developed during this project will be released under MIT or compatible licenses.
 
