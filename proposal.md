@@ -159,10 +159,11 @@ users of the Retriever.
 One of the major challenges in linking datasets in biology are changes and inconsistencies
 in taxonomies. As part of this project I will integrate the Retriever with existing resources
 for accessing and standardizing taxonomic information
-(e.g., Taxonomic Name Resolution Service, http://tnrs.iplantcollaborative.org/;
+(e.g., the iPlant and/or Phylotastic Taxonomic Name Resolution Services,
+http://tnrs.iplantcollaborative.org/, http://www.evoio.org/wiki/Phylotastic/TNRS;
 Integrated Taxonomic Information Service, http://www.itis.gov/;
 Global Names Resolver, http://resolver.globalnames.org/).
-When importing a datasets users will be given the option to have the Retriever automatically
+When importing datasets users will be given the option to have the Retriever automatically
 clean up and standardize the taxonomic information using these services.
 Logs will be generated of all taxonomic changes
 (either as log files or as tables added to the database)
@@ -172,7 +173,7 @@ this integration of taxonomic tools will facilitate **Goal 2**.
 
 #### Integration of phylogenetic tools
 
-One of they key components to integrating evolutionary and ecological data
+One of the key components to integrating evolutionary and ecological data
 is the phylogenetic tree for the species involved. I will leverage existing informatics efforts
 that are compiling and providing access to phylogenetic data
 (e.g., Phylotastic, http://phylotastic.org; Tree of Life; http://tolweb.org; TreeBASE, http://treebase.org/)
