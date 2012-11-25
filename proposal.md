@@ -1,5 +1,5 @@
-Supporting Evolutionary Synthesis by Integrating Evolutionary Data in the EcoData Retriever
-===========================================================================================
+Supporting Synthetic Science by Integrating Evolutionary Data in the EcoData Retriever
+======================================================================================
 
 Ethan P. White,
 Department of Biology and the Ecology Center,
@@ -42,7 +42,11 @@ To allow scientists to quickly and easily leverage this data,
 we have started developing a software package that automatically downloads, cleans up,
 and installs many of the most important datasets in synthetic ecology.
 The proposed sabbatical will allow the extension of this software to evolutionary biology,
-and will allow it to produce complete synthetic datasets to support evolutionary-ecological syntheses. 
+and will allow it to produce complete synthetic datasets that combine many datasets
+into one.
+This will support evolutionary and eco-evolutionary synthesis by making it easier to assemble
+and clean the necessary data, thus leaving scientists with more time to focus on the scientific
+questions of interest.
 
 
 Introduction and Goals
