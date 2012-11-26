@@ -1,7 +1,7 @@
 Supporting Synthetic Science by Integrating Evolutionary Data in the EcoData Retriever
 ======================================================================================
 
-Ethan P. White,
+**Ethan P. White**,
 Department of Biology and the Ecology Center,
 Utah State University,
 5305 Old Main Hill,
@@ -12,23 +12,22 @@ Phone: 435-797-2097
 
 Project Summary
 ---------------
-Large amounts of biological data are being collected every year and made available for analysis and synthesis.
-One of the primary challenges for synthetic research is the process of identifying the necessary data,
-making individual datasets usable, and then integrating the different datasets.
-This process is difficult because most biological data does not adhere to any standard format and
-violates basic rules of proper data structure.
+Large amounts of biological data are available for analysis and synthesis.
+One of the primary challenges for synthetic research is the process of
+making individual datasets usable and then integrating the different datasets.
+This process is difficult because most biological data does not adhere to standard formats and
+violates basic rules of data structure.
 In addition, linking datasets is challenging due to differences in structure and problems with identifiers for linking data. 
 This means that compiling and combining data to answer synthetic questions is difficult,
 and requires computational skills and knowledge that many biologists lack.
-My lab developed a software package (the EcoData Retriever) to begin to reduce these barriers to synthetic science in ecology.
-This package automatically downloads data, cleans it, processes it into proper structure,
+My lab developed software to reduce these barriers to synthetic science in ecology.
+This software automatically downloads data, processes it into proper structure,
 and stores it in a variety of common formats for easy analysis.
-The proposed research would support a major expansion of the Retriever to:
+The proposed research would support a major expansion of this software to:
 1) Include evolutionary, taxonomic, and trait information of interest to evolutionary biologists; and
 2) Automatically generate synthetic datasets combining data across datasets to allow researchers to rapidly conduct synthetic analyses.
 These efforts will focus on facilitating eco-evolutionary synthesis,
-since it is now widely recognized that evolution and ecology are inherently intertwined.
-This sort of interdisciplinary synthetic research is particularly difficult due to differences in data structure among disciplines and the fact that most researchers are not experts in both evolutionary and ecological data.
+which is particularly difficult due to differences in data structure among disciplines and the fact that most researchers are not experts in both evolutionary and ecological data.
 
 
 Public Summary
@@ -49,14 +48,12 @@ thus leaving scientists with more time to focus on doing science.
 
 Introduction and Goals
 ----------------------
-Increasingly large quantities of biological data are being generated and
-made publicly available for analysis.
-This data includes the results from: 1) large coordinated sampling efforts
+Increasingly large quantities of biological data are being generated a combination of:
+1) large coordinated sampling efforts
 such as the National Ecological Observatory Network (http://neoninc.org);
 2) compilations of results into standardized repositories
 such as GenBank (http://www.ncbi.nlm.nih.gov/genbank/) or the Tree of Life (http://tolweb.org/tree);
 and 3) the publication of individual datasets in repositories like Dryad (http://www.datadryad.org; Whitlock et al. 2010).
-
 As a result of this rapidly expanding availability of data,
 synthetic research in biology is increasingly limited by the rate at which available data can be acquired, organized, and analyzed.
 Unfortunately, this process of assembling data for synthesis is time consuming and
@@ -94,8 +91,8 @@ begin facilitating the combination of datasets to automate the process of produc
 for synthetic projects.
 I propose to address these critical needs by addressing three major goals:
 
-**Goal 1: Incorporate evolutionary and taxonomic data into the Retriever**.
-I will add an array of evolutionary data
+**Goal 1: Incorporate evolutionary and taxonomic data**.
+I will add evolutionary data
 to the Retriever including phylogenetic, taxonomic, trait, and other useful data
 identified through interactions with the NESCent community.
 This work will utilize existing informatics resources to avoid duplication of effort.
@@ -124,7 +121,7 @@ and infrastructure for data publication.
 Proposed Activities
 -------------------
 
-### Goal 1: Incorporate evolutionary and taxonomic data into the Retriever
+### Goal 1: Incorporate evolutionary and taxonomic data
 
 A broad array of data relevant to evolutionary and eco-evolutionary synthesis
 will be added to the Retriever. Thanks to a number of ongoing efforts by other
@@ -136,15 +133,14 @@ informatics efforts (see below) and the addition trait based datasets as well
 as other important datasets for evolutionary synthesis determined through interactions
 with members of the NESCent community.
 
-**Integration of taxonomic tools: **
-One of the major challenges in linking datasets in biology are changes and inconsistencies
-in taxonomies. As part of this project I will integrate the Retriever with existing resources
-for accessing and standardizing taxonomic information
+**Integration of taxonomic tools:**
+One of the major challenges in linking datasets in biology is differences in
+in taxonomies. I will integrate the Retriever with existing resources
+for standardizing taxonomic information
 (e.g., iPlant and Phylotastic's Taxonomic Name Resolution Services,
 http://tnrs.iplantcollaborative.org/, http://www.evoio.org/wiki/Phylotastic/TNRS;
-Integrated Taxonomic Information Service, http://www.itis.gov/;
-Global Names Resolver, http://resolver.globalnames.org/).
-When importing datasets users will be given the option to have the Retriever automatically
+Integrated Taxonomic Information Service, http://www.itis.gov/).
+When importing datasets the Retriever will (optionally)
 clean up and standardize the taxonomic information using these services.
 Logs will be generated of all taxonomic changes
 (either as log files or as tables added to the database)
@@ -152,14 +148,14 @@ to allow for full back tracking to the original data source.
 In addition to improving analysis and reporting of individual datasets,
 this integration of taxonomic tools will facilitate **Goal 2**.
 
-**Integration of phylogenetic tools: **
+**Integration of phylogenetic tools:**
 One of the key components to integrating evolutionary and ecological data
 is the phylogenetic tree for the species involved. I will leverage existing informatics efforts
 that are compiling and providing access to phylogenetic data
 (e.g., Phylotastic, http://phylotastic.org; Tree of Life; http://tolweb.org; TreeBASE, http://treebase.org/)
 through web services to integrate phylogenies with other biological data.
 
-**Trait and life history data: **
+**Trait and life history data:**
 Publicly available trait and life history data is currently distributed across a wide array
 of different sources
 (e.g., Freshwater Biological Traits Database, http://www.epa.gov/ncea/global/traits/;
@@ -203,9 +199,9 @@ between different datasets and serve as a building block for integrating the Ret
 thoroughly into the growing eco-evolutionary informatics ecosystem.
 
 ### Goal 3: Provenance baked in
-One of the current challenges with synthetic data analysis is tracking the many complicated steps involved in assembling the data.
-While much of this is well handled by workflows of various forms,
-this process typically starts after much of the data download and processing has already occurred.
+One of the current challenges with synthetic data analysis is tracking the many steps involved in assembling the data.
+While workflows of various forms increasingly document analyses,
+this process often starts after the data download and processing has already occurred.
 I will add functionality to the Retriever to store all of the information necessary for complete provenance with the resulting data.
 Data sources, download dates, and the version of the Retriever used to process the data,
 will all be recorded. In combination with the Retriever's open source, version controlled,
@@ -218,17 +214,15 @@ and will store both the raw downloaded data and the processed form as exports/du
 Rationale For NESCent Support
 -----------------------------
 NESCent is a major center of evolutionary informatics and is therefore
-the ideal location for this development.
-Since my efforts will draw as much as possible on existing initiatives to avoid duplicating effort,
-and the first group will provide me with colleagues developing the cutting edge of
-informatics resources which will help facilitate the integration of the Retriever
+the ideal location for this work.
+My efforts will use existing initiatives, to avoid duplicating effort,
+and interactions with NESCent's informatics team will help facilitate the integration of the Retriever
 with existing initiatives.
-In addition, NESCent hosts many researchers addressing interdisciplinary evolutionary questions.
+In addition, NESCent hosts many researchers addressing synthetic evolutionary questions.
 Interacting with these researchers will allow me to learn more about what kinds of datasets and
 combinations of datasets are most needed by the evolutionary synthesis community.
-In addition, one of the primary sources for evolutionary and ecological data is DRYAD, and
-NESCent's active involvement in the development of DRYAD will facilitate the integration of
-DRYAD data into the Retriever.
+Finally, NESCent's involvement in the development of DRYAD (one of the primary repositories for
+evolutionary data) will facilitate the integration of DRYAD data into the Retriever.
 
 Collaborations
 --------------
@@ -244,7 +238,7 @@ Proposed Timetable
 ------------------
 
 I propose a 12-month sabbatical from August 15, 2013 to August 15, 2014.
-***Months 1-2:*** Improve fundamentals of the Retriever to make adding new features easier and the code
+**Months 1-2:** Improve fundamentals of the Retriever to make adding new features easier and the code
 more maintainable.
 Improvements to the testing framework and documentation, and addition of continuous integration.
 Interact actively with
@@ -269,8 +263,8 @@ I and my lab have a long history of open science activities including the public
 
 Anticipated Results
 -------------------
-I anticipate that this proposal will result in 2-3 major releases of the Retriever.
-This will include substantial expansions and improvements of the website
+This proposal will result in 2-3 major releases of the Retriever and
+substantial expansions and improvements of the website
 (http://ecodataretriever.org) and associate documentation.
 In addition, the rOpenSci team and I are planning to wrap the Retriever's 
 command line interface to allow it to be used from inside of R.
@@ -279,7 +273,7 @@ This will result in a new R package published on CRAN.
 References Cited
 ----------------
 
-Jones, M. B., M. P. Schildhauer, O. J. Reichman, and S. Bowers. 2006. The New Bioinformatics: Integrating Ecological Data from the Gene to the Biosphere. Annual Review of Ecology, Evolution, and Systematics 37: 519-544.
+Jones, M. B. et al. 2006. The New Bioinformatics: Integrating Ecological Data from the Gene to the Biosphere. Annual Review of Ecology, Evolution, and Systematics 37: 519-544.
 
 Parr, C.S., R. Guralnick, N. Cellinese, and R.D.M. Page. 2012. Evolutionary informatics: unifying knowledge about the diversity of life. Trends in Ecology & Evolution 27:94 - 103. 
 
