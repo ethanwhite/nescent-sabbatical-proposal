@@ -5,10 +5,8 @@ Ethan P. White,
 Department of Biology and the Ecology Center,
 Utah State University,
 5305 Old Main Hill,
-Logan, UT 84341
-
-Email: ethan.white@usu.edu
-
+Logan, UT 84341,
+Email: ethan.white@usu.edu,
 Phone: 435-797-2097
 
 
@@ -70,21 +68,21 @@ even for experienced data scientists.
 
 These problems mean that scientists spend a lot of time simply assembling,
 cleaning, and combining datasets.
-In addition, the skills and tools required to assemble data are often not required for
-actually conducting synthetic science *per se*.
+In addition, many biologists lack the skills and tools required to assemble this type of data.
 This means that the difficulty of assembling data can serve as a major barrier,
 preventing many scientists from conducting synthetic research at all.
 These challenges are magnified when trying to work across disciplinary boundaries,
 because of the lack of researchers with expertise in the availability and structure of
 data in their across multiple disciplines.
 
-My lab has begun to address these challenges by developing a software package (the EcoData Retriever; http://ecodataretriever.org) to make it easier to conduct synthetic science in ecology.
-This package automatically downloads data from individual datasets,
-cleans it, processes it into proper structure,
-and stores it in a variety of common formats for easy analysis.
-While this package has proved useful to us and a growing number of other researchers,
-it is limited both by its lack of evolutionary data,
-and its lack of ability to automatically integrate evolutionary and ecological datasets.
+My lab has begun to address these challenges by developing software
+(the EcoData Retriever; http://ecodataretriever.org) to make it easier to conduct
+synthetic science in ecology.
+This software automatically downloads data for individual datasets, cleans it,
+processes it into proper structure, and stores it in a variety of common formats for easy analysis.
+While this software has proved useful to us and a growing number of other researchers,
+it is limited by a lack of evolutionary data and an inability to automatically integrate
+evolutionary and ecological datasets.
 
 With the leadership of NESCent over the past decade, evolutionary synthesis has now
 come to the forefront of synthetic research in biology.
@@ -96,13 +94,13 @@ begin facilitating the combination of datasets to automate the process of produc
 for synthetic projects.
 I propose to address these critical needs by addressing three major goals:
 
-**Goal 1: Incorporate evolutionary, phylogenetic, and taxonomic data into the Retriever**.
+**Goal 1: Incorporate evolutionary and taxonomic data into the Retriever**.
 I will add an array of evolutionary data
-to the Retriever including phylogenetic, taxonomic, and trait data as well as other useful data
-identified through interactions with individuals visiting or in residence at NESCent.
-Whenever possible this work will utilize existing informatics resources to avoid duplication of effort.
+to the Retriever including phylogenetic, taxonomic, trait, and other useful data
+identified through interactions with the NESCent community.
+This work will utilize existing informatics resources to avoid duplication of effort.
 
-**Goal 2: Automatically build synthetic datasets to facilitate interdisciplinary synthesis**.
+**Goal 2: Automatically build synthetic datasets**.
 Once clean, well formatted, data exists for individual datasets,
 the next major challenge is combining those datasets for analysis.
 I will add the ability to combine datasets for synthesis by adding core architecture to
@@ -111,15 +109,13 @@ without strong computational backgrounds to use the Retriever to make it possibl
 to produce these datasets.
 
 **Goal 3: Provenance baked in**.
-It is increasingly recognized that in order for science to be replicable/reproducible that
+It is increasingly recognized that for science to be reproducible that
 the history of the entire process from data collection through analysis needs to be documented.
 However, rigorous documentation often begins after data acquisition and cleaning has occurred.
 I will add automated provenance recording and data archiving to the Retriever to make recording
 the details of data acquisition and processing as simple as pushing a button.
 
-In combination with further improvements to the software in general
-(e.g., an improved testing framework with continuous integration and better documentation)
-addressing these goals will result in a key tool for immediately supporting evolutionary and
+Addressing these goals will result in a key tool for immediately supporting evolutionary and
 eco-evolutionary synthesis using published data in its existing format,
 while broader initiatives (e.g., Parr et al. 2012, DataONE) work
 towards developing more complex and inclusive solutions based on new standards
@@ -128,7 +124,7 @@ and infrastructure for data publication.
 Proposed Activities
 -------------------
 
-### Goal 1: Incorporate evolutionary, phylogenetic, and taxonomic data into the Retriever
+### Goal 1: Incorporate evolutionary and taxonomic data into the Retriever
 
 A broad array of data relevant to evolutionary and eco-evolutionary synthesis
 will be added to the Retriever. Thanks to a number of ongoing efforts by other
@@ -173,7 +169,7 @@ The available data will be added to the Retriever,
 and restructured to allow all of
 the different trait databases to be consistently integrated with other datasets.
 
-### Goal 2: Automatically build synthetic datasets to facilitate interdisciplinary synthesis
+### Goal 2: Automatically build synthetic datasets
 
 One of the biggest challenges in synthetic research is combining datasets.
 I will develop tools in the Retriever to facilitate two different kinds of dataset combination.
@@ -221,17 +217,15 @@ and will store both the raw downloaded data and the processed form as exports/du
 
 Rationale For NESCent Support
 -----------------------------
-NESCent is the international center of evolutionary informatics and is therefore
+NESCent is a major center of evolutionary informatics and is therefore
 the ideal location for this development.
-At NESCent I will have access to both researchers actively developing software
-for synthetic evolutionary research,
-and researchers addressing interdisciplinary evolutionary questions.
-My efforts will draw as much as possible on existing initiatives to avoid duplicating effort,
+Since my efforts will draw as much as possible on existing initiatives to avoid duplicating effort,
 and the first group will provide me with colleagues developing the cutting edge of
 informatics resources which will help facilitate the integration of the Retriever
 with existing initiatives.
-The second group will allow me to learn more about what kinds of datasets and
-combinations are most needed by the evolutionary synthesis community.
+In addition, NESCent hosts many researchers addressing interdisciplinary evolutionary questions.
+Interacting with these researchers will allow me to learn more about what kinds of datasets and
+combinations of datasets are most needed by the evolutionary synthesis community.
 In addition, one of the primary sources for evolutionary and ecological data is DRYAD, and
 NESCent's active involvement in the development of DRYAD will facilitate the integration of
 DRYAD data into the Retriever.
@@ -250,21 +244,17 @@ Proposed Timetable
 ------------------
 
 I propose a 12-month sabbatical from August 15, 2013 to August 15, 2014.
-The first two months will be spent shoring up the fundamentals of the Retriever
-by improving the testing framework, adding continuous integration, and
-improving the documentation.
-This will make adding new features faster and safer, and make the code
-more maintainable in the long run.
-While conducting this ground work I plan to interact actively with
+***Months 1-2:*** Improve fundamentals of the Retriever to make adding new features easier and the code
+more maintainable.
+Improvements to the testing framework and documentation, and addition of continuous integration.
+Interact actively with
 the NESCent informatics and scientific communities to identify the
-best areas to focus effort in **Goals 1 & 2**.
-Months 3-6 will focus on **Goal 1**.
-Months 7-10 will focus on implementing **Goal 2**.
-Finally months 11-12 will combine the implementation of **Goal 3** and wrap
-up of remaining tasks from the other two goals.
-Releases will occur throughout the year as new features are developed
-and datasets added.
-
+best areas to focus effort in Goals 1 & 2.
+**Months 3-6:** Goal 1.
+**Months 7-10:** Goal 2.
+**Months 11-12:** Goal 3 and wrap
+up of remaining tasks from Goals 1 & 2.
+Releases will occur throughout the year as features are completed.
 
 
 Anticipated IT Needs & Plan For Making Data/Software Available
@@ -272,8 +262,9 @@ Anticipated IT Needs & Plan For Making Data/Software Available
 I will be developing software as part of this proposal,
 but I will be handling all of the development myself and therefore will not require IT support
 (though I greatly look forward to the possibility of interacting with this group).
-
-I and my lab have a long history of open science activities including the publication of data and software under open source licenses. In fact, this entire proposal was developed in the open on GitHub under a CC-BY license (https://github.com/ethanwhite/nescent-sabbatical-proposal). The EcoData Retriever is released under an MIT License (an approved OSI open source license) and all code developed during this project will be released under MIT or compatible licenses.
+The software developed at NESCent will be released under an MIT License
+(an approved OSI open source license).
+I and my lab have a long history of open science activities including the publication of data and software under open source licenses. In fact, this entire proposal was developed in the open on GitHub under a CC-BY license (https://github.com/ethanwhite/nescent-sabbatical-proposal).
 
 
 Anticipated Results
@@ -282,8 +273,8 @@ I anticipate that this proposal will result in 2-3 major releases of the Retriev
 This will include substantial expansions and improvements of the website
 (http://ecodataretriever.org) and associate documentation.
 In addition, the rOpenSci team and I are planning to wrap the Retriever's 
-command line interface for their system to allow it to be used from inside of R.
-This work will likely occur during my sabbatical and will result in a new R package published on CRAN.
+command line interface to allow it to be used from inside of R.
+This will result in a new R package published on CRAN.
 
 References Cited
 ----------------
@@ -292,7 +283,7 @@ Jones, M. B., M. P. Schildhauer, O. J. Reichman, and S. Bowers. 2006. The New Bi
 
 Parr, C.S., R. Guralnick, N. Cellinese, and R.D.M. Page. 2012. Evolutionary informatics: unifying knowledge about the diversity of life. Trends in Ecology & Evolution 27:94 - 103. 
 
-Reichman, O. J., Jones, M. B. & Schildhauer, M. P. 2011. “Challenges and Opportunities of Open Data 	in Ecology.” Science 331, 703–705.
+Reichman, O.J., M.B. Jones, and M.P. Schildhauer. 2011. “Challenges and Opportunities of Open Data 	in Ecology.” Science 331, 703–705.
 
 Thibault, K.M., E.P. White, A.H. Hurlbert, and S.K.M. Ernest. 2011. Multimodality in the individual size distribution of bird communities. Global Ecology and Biogeography 20:145-153.
 
