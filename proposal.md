@@ -190,11 +190,11 @@ to be combined into synthetic datasets for rapid analysis.
 
 Because the combinations of data for synthetic projects vary substantially,
 I will also improve and expand our existing system to allow users with limited
-computational backgrounds to quickly combine datasets in customized ways without programming.
+computational backgrounds to combine datasets in customized ways through a simple web interface.
 In collaboration with Ben Morris, I will improve our existing approach to adding
-datasets to the Retriever by transitioning our scripting system for describing the structure
-of individual datasets to use the Resource Description Framework (RDF) with an ontology
-written in Web Ontology Language(OWL). This will make it easier to describe the relationships
+datasets to the Retriever by transitioning from our current custom scripting system for describing the structure
+of individual datasets to formal semantic web standards including
+the Resource Description Framework (RDF) and Web Ontology Language(OWL). This will make it easier to describe the relationships
 between different datasets and serve as a building block for integrating the Retriever more
 thoroughly into the growing eco-evolutionary informatics ecosystem.
 
