@@ -47,7 +47,7 @@ Publications
 I have published (or had accepted) 46 journal articles and book chapters since 2001.
 They have been cited 1306 times and I have an h-index of 19 (data from Google Scholar).
 Alt-metric analyses by Impact Story (http://impactstory.org/collection/givnxe) show that
-23 of these papers have been Highly Saved, 13 of them have been Highly Cited, 3 have been
+28 of these papers have been Highly Saved, 15 of them have been Highly Cited, 3 have been
 Highly Discussed, and 2 have been Highly Recommended.
 
 ### Publications Summarized by Journal
